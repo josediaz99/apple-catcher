@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>apple catcher</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
+
+
+  </head>
+  <body>
+    <header> 
+      <p>Phaser Demo by jose | apple Catcher</p>
+    </header>
+    <main>
+      <canvas id = "gameCanvas"></canvas>
+      <div id = "gameStartDiv" class = "gameUI">
+        <h1>Apple Catcher</h1>
+        <p>you have 30 seconds to catch apples!</p>
+        <p> if you catch more than ten apples you win</p>
+        <p>click to the button to start</p>
+        <button id = "gameStartBtn"><p>start</p></button>
+      </div>
+      <div id="gameEndDiv" class = "gameUI">
+        <p>game over</p>
+        <h1>you <span id = "gameWinLoseSpan"></span></h1>
+        <h1>Final Score: <span id= "gameScoreSpan"></span></h1>
+        <p>refresh the page to play again</p>
+      </div>
+    </main>
+    <footer>followed a tutorial by digitaldeja0 on github</footer>
+    <script src="src/main.js"></script>
+
+  </body>
+</html>
