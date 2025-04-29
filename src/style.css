@@ -2,7 +2,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   --darkClr:#181818;
   --lightClr:whitesmoke;
-  --accentClr:#0d0d35;
+  --accentClr:#02020a;
 }
 *{
   margin: 0;
@@ -87,4 +87,48 @@ main{
   border:  .5px solif var(--lightClr);
   color: var(--lightClr);
   cursor: pointer;
+}
+
+#sideNav {
+  position: fixed;
+  top: 20px;
+  bottom: 20px;
+  left: 40px;
+  width: 250px; /* Slightly wider for better visibility */
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect with more transparency */
+  backdrop-filter: blur(15px); /* Stronger blur for a frosted glass effect */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 10; /* Ensure it appears above other elements */
+  border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+#sideNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sideNav ul li {
+  margin: 20px 0;
+}
+
+#sideNav ul li a {
+  text-decoration: none;
+  color: var(--lightClr); /* Lighter text color for contrast */
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding: 12px 15px; /* More padding for better button feel */
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2); /* Lighter button background */
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+#sideNav ul li a:hover {
+  background: rgba(255, 255, 255, 0.4); /* Brighter hover effect */
+  color: var(--darkClr); /* Darker text on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
